@@ -12,6 +12,7 @@
 #
 # 09-Mar-2017   Sasha Goldshtein   Created this.
 
+from __future__ import print_function
 from bcc import BPF, USDT
 import argparse
 import re

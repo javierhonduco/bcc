@@ -17,6 +17,7 @@
 #
 # 04-Mar-2016	Jean-Tiare Le Bigot	Created this.
 
+from __future__ import print_function
 import os
 from socket import inet_ntop, AF_INET, AF_INET6, SOCK_STREAM, SOCK_DGRAM
 from struct import pack

@@ -26,6 +26,7 @@
 # 13-Feb-2018   Rodrigo Manyari   Fix pep8 errors, some refactoring.
 # 05-Mar-2018   Rodrigo Manyari   Add date time to output.
 
+from __future__ import print_function
 import argparse
 import json
 import logging

@@ -13,6 +13,7 @@
 #
 # 11-Aug-2015   Brendan Gregg   Created this.
 
+from __future__ import print_function
 from bcc import BPF
 from ctypes import c_int
 from time import sleep, strftime

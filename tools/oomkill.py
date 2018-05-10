@@ -14,6 +14,7 @@
 #
 # 09-Feb-2016   Brendan Gregg   Created this.
 
+from __future__ import print_function
 from bcc import BPF
 from time import strftime
 import ctypes as ct
