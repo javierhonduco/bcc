@@ -9,6 +9,7 @@
 #
 # 15-Feb-2017   Sasha Goldshtein    Created this.
 
+from __future__ import print_function
 from bcc import BPF
 from bcc.utils import printb
 from time import sleep, strftime

@@ -32,6 +32,7 @@
 #
 # 16-Mar-2018   Howard McLauchlan   Created this.
 
+from __future__ import print_function
 import argparse
 import re
 from bcc import BPF

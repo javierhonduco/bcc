@@ -9,6 +9,7 @@
 # Licensed under the Apache License, Version 2.0 (the "License")
 # Copyright (C) 2016 Sasha Goldshtein.
 
+from __future__ import print_function
 from bcc import BPF, USDT
 from time import sleep, strftime
 import argparse

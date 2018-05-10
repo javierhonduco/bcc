@@ -12,6 +12,7 @@
 #
 # 05-Feb-2016 Allan McAleavy ran pep8 against file
 
+from __future__ import print_function
 from bcc import BPF
 from time import sleep
 
