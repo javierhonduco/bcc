@@ -145,7 +145,7 @@ class Probe(object):
             for tracepoint in tracepoints:
                 text += self._add_function(template, tracepoint)
         elif self.type == b"u":
-            self.usdt = USDT(path=self.library, pid=self.pid)
+            self.usdt = USDT(path=self.library.decode(), pid=self.pid)
             matches = []
             for probe in self.usdt.enumerate_probes():
                 if not self.pid and (probe.bin_path != self.library):
@@ -154,9 +154,9 @@ class Probe(object):
                     matches.append(probe.name)
             verify_limit(len(matches))
             for match in matches:
-                new_func = b"trace_count_%d" % self.matched
+                new_func = "trace_count_%d" % self.matched
                 text += self._add_function(template, match)
-                self.usdt.enable_probe(match, new_func)
+                self.usdt.enable_probe(match.decode(), new_func)
             if debug:
                 print(self.usdt.get_text())
         return text
